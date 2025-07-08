@@ -985,4 +985,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Property Gallery Functionality
+    const galleryMain = document.querySelector('.gallery-main img');
+    const thumbnails = document.querySelectorAll('.gallery-thumbnails img');
+
+    if (galleryMain && thumbnails.length > 0) {
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Update main image
+                galleryMain.src = this.src;
+                galleryMain.alt = this.alt;
+
+                // Update active state
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }
 }); 

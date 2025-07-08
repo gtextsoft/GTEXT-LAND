@@ -2428,3 +2428,312 @@ footer::before {
     grid-template-columns: 1fr;
   }
 }
+
+/* Property Details Page Styles */
+.property-hero {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.property-breadcrumb {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.property-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.property-breadcrumb a:hover {
+  color: #007bff;
+}
+
+.property-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.property-title h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.property-location {
+  display: flex;
+  align-items: center;
+  color: #666;
+}
+
+.property-location i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.property-badges {
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.best-selling {
+  background-color: #28a745;
+  color: white;
+}
+
+.client-estate {
+  background-color: #007bff;
+  color: white;
+}
+
+.property-gallery {
+  padding: 40px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery-thumbnails img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.gallery-thumbnails img:hover,
+.gallery-thumbnails img.active {
+  opacity: 0.7;
+}
+
+.property-details {
+  padding: 60px 0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.details-section {
+  margin-bottom: 40px;
+}
+
+.details-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.key-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.key-features li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.key-features i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.property-amenities {
+  margin-top: 30px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.amenity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.amenity i {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.location-advantages {
+  list-style: none;
+  padding: 0;
+}
+
+.location-advantages li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.location-advantages i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.pricing-card,
+.agent-card {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.price-details {
+  margin: 20px 0;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.price-item .label {
+  color: #666;
+}
+
+.price-item .value {
+  font-weight: 600;
+}
+
+.agent-contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.agent-contact i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.agent-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.agent-contact a:hover {
+  color: #007bff;
+}
+
+.similar-properties {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.property-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-info h3 {
+  margin-bottom: 10px;
+}
+
+.property-info p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .property-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .property-badges {
+    margin-top: 15px;
+  }
+  
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gallery-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+}
