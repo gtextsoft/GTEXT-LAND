@@ -1,5 +1,7 @@
 {
-  "extends": ["development"],
+  "extends": [
+    "development"
+  ],
   "hints": {
     "axe/forms": [
       "default",
@@ -10,7 +12,9 @@
     "compat-api/html": [
       "default",
       {
-        "ignore": ["iframe[referrerpolicy=no-referrer-when-downgrade]"]
+        "ignore": [
+          "iframe[referrerpolicy=no-referrer-when-downgrade]"
+        ]
       }
     ],
     "axe/text-alternatives": [
@@ -26,6 +30,7 @@
         "link-name": "off",
         "button-name": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }
