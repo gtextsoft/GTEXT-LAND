@@ -1,360 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - GTEXTLAND</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/GL Logo.png" alt="GTEXTLAND Logo" />
-          </a>
-        </div>
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html" class="btn-primary">Properties</a></li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — GTEXTLAND</title>
+  <meta name="description" content="Contact GTEXTLAND for property enquiries. Call Olamilesi +234 814 259 0965 or Martha +234 703 193 0951. Visit us in Ibeju Lekki, Lagos State." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="GTEXTLAND" class="brand-logo" width="160" height="44" /></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="portal.html">Properties</a><a href="contact.html" class="active">Contact</a>
+        <a href="contact.html?subject=consultation" class="btn btn-primary">Book Consultation</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
 
-    <!-- Contact Hero Section -->
-    <section class="contact-hero">
-      <div class="hero-bg"></div>
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="container">
-        <div class="contact-hero-content">
-          <h1>Contact Us</h1>
-          <p>
-            We're here to answer any questions you may have about our properties
-            and services.
-          </p>
-        </div>
-      </div>
-    </section>
+  <section class="page-hero has-bg-image" style="--hero-bg-image: url('images/contact-map.jpg')">
+    <div class="container">
+      <p class="eyebrow" style="color:#6ee7b7;justify-content:center">Get in Touch</p>
+      <h1>Let's Start Your Investment Journey</h1>
+      <p>Questions about our properties? Our team responds within 24 hours.</p>
+    </div>
+  </section>
 
-    <!-- Contact Information Section -->
-    <section class="contact-info">
-      <div class="container">
-        <div class="info-cards">
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-map-marker-alt"></i>
+  <section class="section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card"><div class="card-icon"><i class="fas fa-map-marker-alt"></i></div><h3>Visit Us</h3><p>Jasper Gardenia Estate<br />Adjacent Dangote Jetty, Ibeju Lekki<br />Lagos State, Nigeria</p></div>
+        <div class="info-card"><div class="card-icon"><i class="fas fa-phone"></i></div><h3>Call Us</h3><p><a href="tel:+2348142590965">+234 814 259 0965</a> — Olamilesi<br /><a href="tel:+2347031930951">+234 703 193 0951</a> — Martha</p></div>
+        <div class="info-card"><div class="card-icon"><i class="fas fa-envelope"></i></div><h3>Email</h3><p><a href="mailto:info@gtextland.com">info@gtextland.com</a></p></div>
+        <div class="info-card"><div class="card-icon"><i class="fas fa-clock"></i></div><h3>Hours</h3><p>Mon – Fri: 8am – 5pm</p></div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="form-card">
+          <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.5rem">Send a Message</h2>
+          <p class="section-subtitle" style="margin-bottom:1.5rem">Fill out the form and we'll get back to you shortly.</p>
+          <form class="contact-form" id="contact-form" action="#" method="POST">
+            <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="John Doe" required /></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required /></div>
+            <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+234..." /></div>
+            <div class="form-group"><label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="property-inquiry">Property Inquiry</option>
+                <option value="investment">Investment / Consultation</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Other</option>
+              </select>
             </div>
-            <h3>Visit Our Office</h3>
-            <p>
-              Gtext Land, 25A,<br />Omole Phase 1 Estate Lola Holloway,<br />Ikeja,
-              Lagos, Nigeria
-            </p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <h3>Call Us</h3>
-            <p>+234 818 811 1999<br />+234 809 225 5118</p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <h3>Email Us</h3>
-            <p>info@gtextland.com</p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <h3>Working Hours</h3>
-            <p>Monday - Friday: 8am - 5pm</p>
-          </div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us about your investment goals..." required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send Message</button>
+          </form>
+        </div>
+        <div class="map-card">
+          <iframe title="GTEXTLAND office — Jasper Gardenia Estate, Ibeju Lekki" src="https://maps.google.com/maps?q=Jasper+Gardenia+Estate,+Adjacent+Dangote+Jetty,+Ibeju+Lekki,+Lagos+State,+Nigeria&amp;hl=en&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="form-container">
-            <h2 class="section-title">Send Us a Message</h2>
-            <p class="section-subtitle">
-              Fill out the form below and our team will get back to you within
-              24 hours.
-            </p>
-
-            <form class="contact-form" action="#" method="POST">
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Your Phone Number"
-                />
-              </div>
-              <div class="form-group">
-                <select name="subject" required>
-                  <option value="" disabled selected>Select Subject</option>
-                  <option value="property-inquiry">Property Inquiry</option>
-                  <option value="investment">Investment Options</option>
-                  <option value="partnership">Partnership Opportunities</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn-primary">Send Message</button>
-              </div>
-            </form>
-          </div>
-
-          <div class="map-container">
-            <h2 class="section-title">Our Location</h2>
-            <div class="map">
-              <!-- Google Maps Embed -->
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.0838103453257!2d3.3618302!3d6.636513600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b939380b85611%3A0xd0be617ecacc3ccb!2s25a%20Lola%20Holloway%20St%2C%20Omole%20Phase%201%2C%20Ikeja%20101233%2C%20Lagos!5e0!3m2!1sen!2sng!4v1756167608258!5m2!1sen!2sng"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">Follow Us</h2></div>
+      <div class="social-row">
+        <a href="https://www.facebook.com/gtextland" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/gtextland" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/gtextland" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/gtextland" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/@GTEXTLANDS" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- AI Agent Contact Section -->
-    <section id="contact" class="ai-agent">
-      <div class="container">
-        <h2 class="section-title">Chat With Our AI Assistant</h2>
-        <p class="section-subtitle">
-          Get instant answers to your questions directly from our AI Assistant.
-        </p>
-
-        <!-- Option A: Button link -->
-        <a
-          href="https://cdn.botpress.cloud/webchat/v3.2/shareable.html?configUrl=https://files.bpcontent.cloud/2025/08/09/14/20250809145210-Y85LVIYL.json"
-          target="_blank"
-          style="
-            display: inline-block;
-            padding: 12px 24px;
-            background: #065f46;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-          "
-          onmouseover="this.style.background='#047857'"
-          onmouseout="this.style.background='#065f46'"
-        >
-          🤖 Chat with our AI Assistant
-        </a>
+  <section class="section">
+    <div class="container">
+      <div class="section-header"><h2 class="section-title">Frequently Asked Questions</h2></div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question">What documents do I receive? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Every plot comes with verified documentation including Certificate of Occupancy (C of O) or equivalent title, survey plan, and deed of assignment upon completion.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do you offer payment plans? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Yes — we offer flexible installment plans tailored to your budget. Contact our team to discuss available options for your chosen estate.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Can diaspora investors buy? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Absolutely. We serve local and international investors with remote purchase processes, virtual tours, and full documentation support.</p></div></div>
+        <div class="faq-item"><button class="faq-question">How do I schedule a site visit? <i class="fas fa-chevron-down"></i></button><div class="faq-answer"><p>Call us or fill out the contact form above. We'll arrange a guided tour of your preferred estate at a convenient time.</p></div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Connect With Us Section -->
-    <section class="connect-social">
-      <div class="container">
-        <h2 class="section-title">Connect With Us</h2>
-        <p class="section-subtitle">
-          Follow us on social media for updates on new properties and investment
-          opportunities.
-        </p>
-
-        <div class="social-icons">
-          <a href="#" class="social-icon">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#" class="social-icon">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-      <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-container">
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>How do I schedule a property viewing?</h3>
-              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                You can schedule a property viewing by filling out the contact
-                form above, calling our office directly, or sending us an email.
-                Our team will get back to you within 24 hours to arrange a
-                convenient time for your visit.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>What documents do I need to purchase a property?</h3>
-              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                To purchase a property, you'll need valid identification
-                (National ID, Passport, or Driver's License), proof of address,
-                and proof of income or bank statements. Additional documentation
-                may be required depending on the specific property and payment
-                plan.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Do you offer financing options?</h3>
-              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Yes, we offer various financing options and payment plans to
-                make property acquisition more accessible. These include
-                installment plans, mortgage partnerships with select banks, and
-                developer financing options. Contact our sales team for details
-                specific to your situation.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>What are the costs associated with purchasing land?</h3>
-              <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Besides the property cost, additional expenses may include
-                survey fees, legal fees, registration fees, development levy,
-                and in some cases, infrastructure costs. We provide a
-                transparent breakdown of all costs before any purchase
-                commitment.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="images/GL Logo.png" alt="GTEXTLAND Logo" />
-          </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <h3>HOME</h3>
-              <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Our Team</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>QUICK LINKS</h3>
-              <ul>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Covid-19 Response</a></li>
-                <li><a href="#">Environmental</a></li>
-                <li><a href="#">Site Map</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>PROPERTIES</h3>
-              <ul>
-                <li><a href="portfolio.html">View All Properties</a></li>
-                <li><a href="#">Featured Listings</a></li>
-                <li><a href="#">New Developments</a></li>
-                <li><a href="#">Investment Options</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; Copyright Luxury Land. All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-  </body>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding:0"><p>&copy; 2026 GTEXTLAND</p><p><a href="index.html" style="color:rgba(255,255,255,0.6)">Back to Home</a></p></div>
+    </div>
+  </footer>
+  <script src="js/site-config.js"></script><script src="js/main.js"></script><script src="js/lead-widgets.js"></script>
+</body>
 </html>
