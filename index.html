@@ -16,7 +16,7 @@
       {"@context":"https://schema.org","@type":"RealEstateAgent","name":"GTEXTLAND","url":"https://gtextland.com","logo":"https://gtextland.com/images/logo.png","telephone":"+2348142590965","email":"info@gtextland.com","address":{"@type":"PostalAddress","streetAddress":"Jasper Gardenia Estate, Adjacent Dangote Jetty, Ibeju Lekki","addressLocality":"Lagos State","addressCountry":"NG"}}
     </script>
   </head>
-  <body>
+  <body data-page="general">
     <header class="site-header" id="header">
       <div class="container header-inner">
         <a href="index.html" class="brand">
@@ -27,6 +27,7 @@
           <a href="about.html">About</a>
           <a href="services.html">Services</a>
           <a href="portal.html">Properties</a>
+          <a href="blog.html">Blog</a>
           <a href="contact.html">Contact</a>
           <a href="contact.html?subject=consultation" class="btn btn-primary">Book Consultation</a>
         </nav>
@@ -39,7 +40,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow" style="color:#6ee7b7">Nigeria's Premier Land Investment</p>
+          <p class="eyebrow" style="color:#6ee7b7">10 Years of Excellence · Since 2015</p>
           <h1>Build Wealth Through <span>Strategic</span> Real Estate</h1>
           <p class="hero-desc">Luxury serviced plots across Lagos, Abuja, Ibadan, and beyond — with verified documentation, flexible payment plans, and estates ready for immediate development.</p>
           <div class="hero-actions">
@@ -47,6 +48,7 @@
             <a href="contact.html" class="btn btn-ghost btn-lg">Talk to an Advisor</a>
           </div>
           <div class="hero-stats">
+            <div class="hero-stat"><strong>10+</strong><span>Years of Excellence</span></div>
             <div class="hero-stat"><strong>18+</strong><span>Estate Developments</span></div>
             <div class="hero-stat"><strong>6+</strong><span>Cities Covered</span></div>
             <div class="hero-stat"><strong>100%</strong><span>Verified Titles</span></div>
@@ -58,6 +60,29 @@
             <img src="images/hero-secondary.jpg" alt="Contemporary residential property" class="mosaic-sub" loading="lazy" />
             <img src="images/property-waterfront.jpg" alt="Waterfront luxury home" class="mosaic-sub" loading="lazy" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section anniversary-section" id="founder-journey">
+      <div class="container anniversary-grid">
+        <div class="anniversary-content">
+          <p class="eyebrow">October 10, 2025</p>
+          <h2 class="section-title">Celebrating 10 Years of GTEXTLAND</h2>
+          <p class="section-subtitle" style="margin-inline:0;text-align:left">On October 10, 2025, GTEXTLAND marked a decade of transforming land into luxury serviced estates — helping thousands of investors build wealth across Nigeria and beyond.</p>
+          <p style="color:var(--text-muted);margin-bottom:1.5rem;line-height:1.7">Hear directly from our founder on the journey, the vision, and what the next chapter holds for GTEXTLAND.</p>
+          <a href="https://www.youtube.com/live/bdEV1LE1cos?si=i3dpLU3QzLYIl40i" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-play-circle"></i> Watch the Founder Journey
+          </a>
+        </div>
+        <div class="anniversary-embed">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/bdEV1LE1cos?rel=0&modestbranding=1"
+            title="The Founder Journey — GTEXTLAND at 10"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -106,6 +131,20 @@
       </div>
     </section>
 
+    <section class="section section-alt" id="video-showcase">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Virtual Estate Tours</p>
+          <h2 class="section-title">See It Before You Invest</h2>
+          <p class="section-subtitle">Walk through our estates on video — roads, layout, and development progress from anywhere in the world.</p>
+        </div>
+        <div class="video-showcase-grid" id="video-showcase-root"></div>
+        <div class="text-center mt-2" style="margin-top:2rem">
+          <a href="https://www.youtube.com/@gtextland" class="btn btn-secondary btn-lg youtube-channel-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> More on @gtextland</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="section-header">
@@ -115,7 +154,7 @@
         </div>
         <div class="property-grid">
           <article class="property-card">
-            <div class="property-thumb">
+            <div class="property-thumb" data-estate="Sardius Estate Ijebu-Ode">
               <img src="images/property-estate.jpg" alt="Sardius Estate Ijebu-Ode serviced plots" loading="lazy" />
               <span class="badge">Pre-Launch</span>
             </div>
@@ -132,7 +171,7 @@
             </div>
           </article>
           <article class="property-card">
-            <div class="property-thumb">
+            <div class="property-thumb" data-estate="Beryl Beach Front Ibeju-Lekki">
               <img src="images/property-beach.jpg" alt="Beryl Beach Front Ibeju-Lekki beachfront estate" loading="lazy" />
               <span class="badge">Phase 2</span>
             </div>
@@ -149,7 +188,7 @@
             </div>
           </article>
           <article class="property-card">
-            <div class="property-thumb">
+            <div class="property-thumb" data-estate="Beryl Forth City Kurudu">
               <img src="images/property-modern.jpg" alt="Beryl Forth City Kurudu Abuja estate" loading="lazy" />
               <span class="badge">Abuja</span>
             </div>
@@ -276,21 +315,6 @@
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <div class="newsletter-box">
-          <h2 class="section-title">Stay Updated</h2>
-          <p class="section-subtitle" style="margin-inline:auto">New launches, investment tips, and exclusive offers — straight to your inbox.</p>
-          <form class="newsletter-form" action="https://formsubmit.co/info@gtextland.com" method="POST">
-            <input type="hidden" name="_subject" value="GTEXTLAND Newsletter" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="email" name="email" placeholder="you@email.com" required aria-label="Email" />
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
     <footer class="site-footer">
       <div class="container">
         <div class="footer-grid">
@@ -304,7 +328,7 @@
               <a href="https://x.com/gtextland" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
               <a href="https://www.instagram.com/gtextland" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
               <a href="https://www.linkedin.com/company/gtextland" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.youtube.com/@GTEXTLANDS" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com/@gtextland" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
           <div class="footer-col">
@@ -313,6 +337,8 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="team.html">Our Team</a></li>
               <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="careers.html">Careers</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -331,7 +357,6 @@
               <li><a href="tel:+2348142590965">+234 814 259 0965 (Olamilesi)</a></li>
               <li><a href="tel:+2347031930951">+234 703 193 0951 (Martha)</a></li>
               <li><a href="mailto:info@gtextland.com">info@gtextland.com</a></li>
-              <li><a href="contact.html?subject=careers">Careers</a></li>
               <li><a href="sitemap.html">Site Map</a></li>
             </ul>
           </div>
@@ -344,6 +369,9 @@
     </footer>
 
     <script src="js/site-config.js"></script>
+    <script src="js/property-videos.js"></script>
+    <script src="js/video-player.js"></script>
+    <script src="js/lead-sections.js"></script>
     <script src="js/main.js"></script>
     <script src="js/lead-widgets.js"></script>
   </body>

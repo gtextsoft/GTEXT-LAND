@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers — GTEXTLAND</title>
+  <meta name="description" content="Join GTEXTLAND — careers in real estate sales, marketing, and estate development across Nigeria. Apply today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body data-page="careers">
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="GTEXTLAND" class="brand-logo" width="160" height="44" /></a>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+        <a href="portal.html">Properties</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+        <a href="contact.html?subject=consultation" class="btn btn-primary">Book Consultation</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="page-hero has-bg-image" style="--hero-bg-image: url('images/about-office.jpg')">
+    <div class="container">
+      <p class="eyebrow" style="color:#6ee7b7;justify-content:center">Join Our Team</p>
+      <h1>Build Your Career at GTEXTLAND</h1>
+      <p>We're growing Nigeria's finest real estate brand — and we're looking for driven people to grow with us.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Open Positions</h2>
+        <p class="section-subtitle">Explore current opportunities across sales, marketing, and operations.</p>
+      </div>
+      <div class="careers-grid">
+        <div class="career-card">
+          <span class="career-tag">Sales</span>
+          <h3>Real Estate Sales Consultant</h3>
+          <p>Guide clients through estate selection, site visits, and documentation. Experience in property sales preferred.</p>
+          <a href="#apply" class="btn btn-secondary">Apply Now</a>
+        </div>
+        <div class="career-card">
+          <span class="career-tag">Marketing</span>
+          <h3>Digital Marketing Specialist</h3>
+          <p>Drive brand awareness through social media, content, and lead-generation campaigns for our estates.</p>
+          <a href="#apply" class="btn btn-secondary">Apply Now</a>
+        </div>
+        <div class="career-card">
+          <span class="career-tag">Operations</span>
+          <h3>Estate Site Coordinator</h3>
+          <p>Oversee on-site activities, client visits, and liaison with survey and documentation teams.</p>
+          <a href="#apply" class="btn btn-secondary">Apply Now</a>
+        </div>
+        <div class="career-card">
+          <span class="career-tag">General</span>
+          <h3>Open Application</h3>
+          <p>Don't see your role? Tell us how you'd contribute to GTEXTLAND's mission.</p>
+          <a href="#apply" class="btn btn-secondary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="apply">
+    <div class="container">
+      <div class="contact-layout" style="max-width:720px;margin-inline:auto">
+        <div class="form-card">
+          <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.5rem">Submit Your Application</h2>
+          <p class="section-subtitle" style="margin-bottom:1.5rem">Fill out the form below and our HR team will review your application.</p>
+          <form class="lead-form contact-form" id="careers-form" data-form-type="careers" method="POST">
+            <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required placeholder="Your name" /></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@email.com" /></div>
+            <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required placeholder="+234..." /></div>
+            <div class="form-group"><label for="position">Position Applying For</label>
+              <select id="position" name="position" required>
+                <option value="" disabled selected>Select a role</option>
+                <option value="Real Estate Sales Consultant">Real Estate Sales Consultant</option>
+                <option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+                <option value="Estate Site Coordinator">Estate Site Coordinator</option>
+                <option value="Open Application">Open Application</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="linkedin">LinkedIn / Portfolio URL</label><input type="url" id="linkedin" name="linkedin" placeholder="https://..." /></div>
+            <div class="form-group"><label for="message">Cover Letter / Message</label><textarea id="message" name="message" rows="5" required placeholder="Tell us about your experience and why you'd like to join GTEXTLAND..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="brand"><img src="images/logo.png" alt="GTEXTLAND" class="brand-logo" width="160" height="44" /></a><p>Luxury serviced plots across Nigeria.</p></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="team.html">Team</a></li><li><a href="blog.html">Blog</a></li><li><a href="careers.html">Careers</a></li></ul></div>
+        <div class="footer-col"><h4>Properties</h4><ul><li><a href="portal.html">Portal</a></li><li><a href="portfolio.html">Portfolio</a></li></ul></div>
+        <div class="footer-col"><h4>Reach Us</h4><ul><li><a href="tel:+2348142590965">+234 814 259 0965</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 GTEXTLAND</p><p>Ibeju Lekki, Lagos State</p></div>
+    </div>
+  </footer>
+  <script src="js/site-config.js"></script>
+  <script src="js/lead-sections.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/lead-widgets.js"></script>
+</body>
+</html>

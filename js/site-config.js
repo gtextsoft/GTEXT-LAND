@@ -15,6 +15,17 @@ const GTEXTLAND_CONFIG = {
   whatsappMessage:
     "Hello GTEXTLAND, I would like to enquire about your properties.",
   brochure: "images/brochure/gtextland brochure-new.pdf",
+  foundedYear: 2015,
+  anniversary: {
+    years: 10,
+    celebratedOn: "October 10, 2025",
+    headline: "10 Years of Building Nigeria's Finest Estates",
+  },
+  founderVideo: {
+    youtubeId: "bdEV1LE1cos",
+    title: "The Founder Journey — GTEXTLAND at 10",
+    url: "https://www.youtube.com/live/bdEV1LE1cos?si=i3dpLU3QzLYIl40i",
+  },
   address: {
     line1: "Jasper Gardenia Estate",
     line2: "Adjacent Dangote Jetty, Ibeju Lekki",
@@ -27,7 +38,7 @@ const GTEXTLAND_CONFIG = {
     twitter: "https://x.com/gtextland",
     instagram: "https://www.instagram.com/gtextland",
     linkedin: "https://www.linkedin.com/company/gtextland",
-    youtube: "https://www.youtube.com/@GTEXTLANDS",
+    youtube: "https://www.youtube.com/@gtextland",
   },
   formSubmit: "https://formsubmit.co/info@gtextland.com",
 };
