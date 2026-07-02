@@ -45,3 +45,5 @@ const GTEXTLAND_CONFIG = {
   },
   formSubmit: "https://formsubmit.co/info@gtextland.com",
 };
+
+window.GTEXTLAND_CONFIG = GTEXTLAND_CONFIG;
