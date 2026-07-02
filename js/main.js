@@ -34,11 +34,16 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   function setupFormSubmit(form, subjectKey, nextPath) {
-    if (!config?.formSubmit) return;
-    form.setAttribute("action", config.formSubmit);
+    const submitUrl =
+      config.formSubmit ||
+      (config.email ? `https://formsubmit.co/${encodeURIComponent(config.email)}` : null);
+    if (!submitUrl) return;
+
+    form.setAttribute("action", submitUrl);
     form.setAttribute("method", "POST");
 
     const hidden = {
+      _to: config.email || "info@gtextland.com",
       _subject: formSubjects[subjectKey] || formSubjects.enquiry,
       _captcha: "false",
       _template: "table",
@@ -46,13 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     Object.entries(hidden).forEach(([name, value]) => {
-      if (!form.querySelector(`input[name="${name}"]`)) {
-        const input = document.createElement("input");
+      let input = form.querySelector(`input[name="${name}"]`);
+      if (!input) {
+        input = document.createElement("input");
         input.type = "hidden";
         input.name = name;
-        input.value = value;
         form.appendChild(input);
       }
+      input.value = value;
     });
   }
 
@@ -118,6 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (subjectSelect.querySelector(`option[value="${val}"]`)) {
       subjectSelect.value = val;
     }
+  }
+
+  if (config?.calendly) {
+    document.querySelectorAll('a[href*="subject=consultation"]').forEach((a) => {
+      a.setAttribute("href", config.calendly);
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener noreferrer");
+    });
   }
 
   document.querySelectorAll(".faq-item").forEach((item) => {

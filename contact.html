@@ -16,7 +16,7 @@
       <a href="index.html" class="brand"><img src="images/logo.png" alt="GTEXTLAND" class="brand-logo" width="160" height="44" /></a>
       <nav class="site-nav" id="site-nav">
         <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
-        <a href="portal.html">Properties</a><a href="contact.html" class="active">Contact</a>
+        <a href="properties.html">Properties</a><a href="contact.html" class="active">Contact</a>
         <a href="contact.html?subject=consultation" class="btn btn-primary">Book Consultation</a>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
@@ -44,7 +44,12 @@
         <div class="form-card">
           <h2 class="section-title" style="font-size:1.5rem;margin-bottom:0.5rem">Send a Message</h2>
           <p class="section-subtitle" style="margin-bottom:1.5rem">Fill out the form and we'll get back to you shortly.</p>
-          <form class="contact-form" id="contact-form" action="#" method="POST">
+          <form class="contact-form" id="contact-form" action="https://formsubmit.co/info@gtextland.com" method="POST">
+            <input type="hidden" name="_to" value="info@gtextland.com" />
+            <input type="hidden" name="_subject" value="New GTEXTLAND Website Enquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="contact.html?sent=true" />
             <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="John Doe" required /></div>
             <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required /></div>
             <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="+234..." /></div>
@@ -98,6 +103,6 @@
       <div class="footer-bottom" style="border:none;padding:0"><p>&copy; 2026 GTEXTLAND</p><p><a href="index.html" style="color:rgba(255,255,255,0.6)">Back to Home</a></p></div>
     </div>
   </footer>
-  <script src="js/site-config.js"></script><script src="js/lead-sections.js"></script><script src="js/main.js"></script><script src="js/lead-widgets.js"></script>
+  <script src="js/site-config.js"></script><script src="js/site-footer.js"></script><script src="js/faq-section.js"></script><script src="js/lead-sections.js"></script><script src="js/main.js"></script><script src="js/lead-widgets.js"></script>
 </body>
 </html>
