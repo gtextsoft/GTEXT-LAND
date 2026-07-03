@@ -5,7 +5,7 @@ const GTEXTLAND_CONFIG = {
   siteUrl: "https://gtextland.com",
   propertyPortal: "https://portal.gtextland.com",
   propertiesPage: "properties.html",
-  calendly: "https://calendly.com/gtextland/consultation",
+  calendly: "https://calendly.com/gtextland_consultation",
   googleReviews: "https://share.google/fGu24sVTKOyrDIM6r",
   companyName: "GTEXTLAND",
   email: "info@gtextland.com",
