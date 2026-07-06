@@ -9,13 +9,14 @@
 
   const social = config.social || {};
   const propertiesPage = config.propertiesPage || "properties.html";
+  const homePage = config.homePage || "/";
   const year = new Date().getFullYear();
 
   footer.innerHTML = `
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="brand">
+          <a href="${homePage}" class="brand">
             <img src="images/logo.png" alt="GTEXTLAND" class="brand-logo" width="180" height="48" />
           </a>
           <p>Luxury serviced plots and land investment across Nigeria. Building wealth through strategic real estate — 10 years strong since 2015.</p>

@@ -10,6 +10,7 @@
   const showMiniContact = page !== "contact" && page !== "careers";
   const showRegisterInterest = page !== "careers";
   const brochure = config.brochure || "#";
+  const calendly = config.calendly || "https://calendly.com/gtextland_consultation";
   const propertyName =
     document.body.getAttribute("data-property") || "";
 
@@ -57,7 +58,7 @@
           <p class="section-subtitle" style="margin:0">Book a free consultation or download our estate brochure.</p>
         </div>
         <div class="lead-cta-actions">
-          <a href="contact.html?subject=consultation" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+          <a href="${calendly}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
           <a href="${brochure}" class="btn btn-secondary btn-lg" download><i class="fas fa-file-pdf"></i> Download Brochure</a>
         </div>
       </div>

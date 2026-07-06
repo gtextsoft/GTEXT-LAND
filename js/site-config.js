@@ -3,6 +3,7 @@
  */
 const GTEXTLAND_CONFIG = {
   siteUrl: "https://gtextland.com",
+  homePage: "/",
   propertyPortal: "https://portal.gtextland.com",
   propertiesPage: "properties.html",
   calendly: "https://calendly.com/gtextland_consultation",
